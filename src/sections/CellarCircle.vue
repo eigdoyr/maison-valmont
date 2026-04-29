@@ -32,9 +32,22 @@
           type="email"
           placeholder="Enter your email address"
           class="cellar-input"
+          :class="{
+            'cellar-input--error': showError,
+            'cellar-input--success': showSuccess,
+          }"
+          @blur="validateEmail"
+          @input="resetState"
         />
         <span class="cellar-bracket">]</span>
       </div>
+
+      <p v-if="showError" class="cellar-message cellar-message--error">
+        Please enter a valid email address.
+      </p>
+      <p v-if="showSuccess" class="cellar-message cellar-message--success">
+        You're on the list. We'll be in touch.
+      </p>
 
       <button class="cellar-cta" @click="handleSubmit">
         Request Invitation
@@ -49,9 +62,37 @@ import gsap from 'gsap'
 import { useFadeUp, useFadeIn } from '@utils/useAnimations'
 
 const email = ref('')
+const showError = ref(false)
+const showSuccess = ref(false)
+
+const isValidEmail = (value: string): boolean => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
+}
+
+const validateEmail = () => {
+  if (email.value && !isValidEmail(email.value)) {
+    showError.value = true
+    showSuccess.value = false
+  }
+}
+
+const resetState = () => {
+  showError.value = false
+  showSuccess.value = false
+}
 
 const handleSubmit = () => {
-  console.log('Email submitted:', email.value)
+  if (!email.value) {
+    showError.value = true
+    return
+  }
+  if (!isValidEmail(email.value)) {
+    showError.value = true
+    return
+  }
+  showError.value = false
+  showSuccess.value = true
+  email.value = ''
 }
 
 onMounted(() => {
@@ -157,6 +198,34 @@ useFadeUp('.cellar-cta', 0.8)
 
   &:focus {
     border-color: $gold;
+  }
+
+  &--error {
+    border-color: $red;
+    color: $red;
+
+    &::placeholder {
+      color: rgba(140, 0, 8, 0.4);
+    }
+  }
+
+  &--success {
+    border-color: $gold;
+  }
+}
+
+.cellar-message {
+  font-family: $font-body;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  margin-top: -0.5rem;
+
+  &--error {
+    color: $red;
+  }
+
+  &--success {
+    color: $gold;
   }
 }
 
