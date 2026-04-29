@@ -17,7 +17,7 @@ import Origins from '@sections/Origins.vue'
 import Philosophy from '@sections/Philosophy.vue'
 import Collection from '@sections/Collection.vue'
 import CellarCircle from '@sections/CellarCircle.vue'
-import Footer from '@/components/Footer.vue'
+import Footer from '@components/Footer.vue'
 </script>
 
 <style lang="scss">
