@@ -1,7 +1,7 @@
 <template>
-  <div class="app">
+  <main>
     <h1>Maison Valmont</h1>
-  </div>
+  </main>
 </template>
 
 <script setup lang="ts"></script>
