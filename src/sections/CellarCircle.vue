@@ -38,6 +38,7 @@
           }"
           @blur="validateEmail"
           @input="resetState"
+          @keyup.enter="handleSubmit"
         />
         <span class="cellar-bracket">]</span>
       </div>
