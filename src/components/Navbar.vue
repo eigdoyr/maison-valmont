@@ -50,7 +50,6 @@ const closeMenu = () => {
 }
 
 .navbar-logo {
-  font-family: $font-serif;
   font-size: 0.75rem;
   letter-spacing: 0.4em;
   color: $white;
@@ -112,7 +111,6 @@ const closeMenu = () => {
   gap: 2.5rem;
 
   a {
-    font-family: $font-serif;
     font-size: 3rem;
     letter-spacing: 0.2em;
     color: $white;

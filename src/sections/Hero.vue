@@ -122,7 +122,6 @@ useHeroReveal({
 }
 
 .hero-subtitle {
-  font-family: $font-serif;
   font-style: italic;
   font-size: clamp(32px, 5.8vw, 83px);
   color: $gold;
@@ -144,7 +143,6 @@ useHeroReveal({
 }
 
 .hero-year {
-  font-family: $font-serif;
   font-size: clamp(18px, 2.8vw, 40px);
   color: $gold;
   letter-spacing: -0.07em;
@@ -157,7 +155,6 @@ useHeroReveal({
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  font-family: $font-serif;
   font-size: 0.875rem;
   color: $white;
   letter-spacing: 0.1em;

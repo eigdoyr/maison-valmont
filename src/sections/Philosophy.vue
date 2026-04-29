@@ -77,7 +77,6 @@ useFadeUp('.philosophy-body', 0.5)
 }
 
 .philosophy-heading {
-  font-family: $font-serif;
   font-style: italic;
   font-size: clamp(1.5rem, 3.5vw, 3rem);
   color: $white;
@@ -85,7 +84,6 @@ useFadeUp('.philosophy-body', 0.5)
 }
 
 .philosophy-body {
-  font-family: $font-serif;
   font-size: $text-body;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.7;

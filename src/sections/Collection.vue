@@ -96,7 +96,6 @@ useSlideIn('.collection-right', 'right', 0.2)
 }
 
 .collection-heading {
-  font-family: $font-serif;
   font-style: italic;
   font-size: clamp(3rem, 4vw, 5rem);
   color: $gray;
@@ -115,7 +114,6 @@ useSlideIn('.collection-right', 'right', 0.2)
   list-style: none;
 
   li {
-    font-family: $font-serif;
     font-size: $text-body;
     color: $black;
     line-height: 1.5;
@@ -123,7 +121,6 @@ useSlideIn('.collection-right', 'right', 0.2)
 }
 
 .collection-cta {
-  font-family: $font-serif;
   font-size: 0.875rem;
   color: $black;
   border-bottom: 1px solid $black;

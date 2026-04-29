@@ -145,7 +145,6 @@ useFadeUp('.cellar-cta', 0.8)
 }
 
 .cellar-ring-text {
-  font-family: $font-serif;
   font-size: 18px;
   fill: $gold;
   letter-spacing: 0.15em;
@@ -153,14 +152,12 @@ useFadeUp('.cellar-cta', 0.8)
 }
 
 .cellar-heading {
-  font-family: $font-serif;
   font-style: italic;
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   color: $white;
 }
 
 .cellar-body {
-  font-family: $font-serif;
   font-size: $text-body;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.7;
@@ -175,7 +172,6 @@ useFadeUp('.cellar-cta', 0.8)
 }
 
 .cellar-bracket {
-  font-family: $font-serif;
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.4);
 }
@@ -185,7 +181,6 @@ useFadeUp('.cellar-cta', 0.8)
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: $white;
-  font-family: $font-serif;
   font-size: $text-body;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -216,7 +211,6 @@ useFadeUp('.cellar-cta', 0.8)
 }
 
 .cellar-message {
-  font-family: $font-serif;
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   margin-top: -0.5rem;
@@ -233,7 +227,6 @@ useFadeUp('.cellar-cta', 0.8)
 .cellar-cta {
   background: none;
   border: none;
-  font-family: $font-serif;
   font-size: 0.875rem;
   color: $white;
   border-bottom: 1px solid $white;
