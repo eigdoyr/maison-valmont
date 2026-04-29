@@ -19,7 +19,7 @@
         </ul>
       </div>
 
-      <a href="#cellar" class="collection-cta">Acquire Allocation</a>
+      <a href="#cellar" class="collection-cta cta-link">Acquire Allocation</a>
     </div>
 
     <div class="collection-right">
@@ -121,19 +121,8 @@ useSlideIn('.collection-right', 'right', 0.2)
 }
 
 .collection-cta {
-  font-size: 0.875rem;
-  color: $black;
-  border-bottom: 1px solid $black;
-  padding-bottom: 2px;
   align-self: flex-start;
-  transition:
-    color 0.3s ease,
-    border-color 0.3s ease;
-
-  &:hover {
-    color: $red;
-    border-color: $red;
-  }
+  color: $black;
 }
 
 .collection-right {

@@ -50,7 +50,7 @@
         You're on the list. We'll be in touch.
       </p>
 
-      <button class="cellar-cta" @click="handleSubmit">
+      <button class="cellar-cta cta-link" @click="handleSubmit">
         Request Invitation
       </button>
     </div>
@@ -225,21 +225,7 @@ useFadeUp('.cellar-cta', 0.8)
 }
 
 .cellar-cta {
-  background: none;
-  border: none;
-  font-size: 0.875rem;
   color: $white;
-  border-bottom: 1px solid $white;
-  padding-bottom: 2px;
-  cursor: pointer;
-  transition:
-    color 0.3s ease,
-    border-color 0.3s ease;
-
-  &:hover {
-    color: $gold;
-    border-color: $gold;
-  }
 }
 
 @media (max-width: $mobile) {

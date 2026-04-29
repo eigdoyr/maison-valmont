@@ -22,7 +22,9 @@
       </h1>
     </div>
 
-    <a href="#collection" class="hero-cta">Discover the 2019 Vintage</a>
+    <a href="#collection" class="hero-cta cta-link"
+      >Discover the 2019 Vintage</a
+    >
   </section>
 </template>
 
@@ -155,19 +157,7 @@ useHeroReveal({
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  font-size: 0.875rem;
   color: $white;
-  letter-spacing: 0.1em;
-  border-bottom: 1px solid $white;
-  padding-bottom: 2px;
-  transition:
-    color 0.3s ease,
-    border-color 0.3s ease;
   white-space: nowrap;
-
-  &:hover {
-    color: $gold;
-    border-color: $gold;
-  }
 }
 </style>
