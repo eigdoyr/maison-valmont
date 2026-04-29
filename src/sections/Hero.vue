@@ -1,7 +1,9 @@
 <template>
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <img :src="heroBg" alt="Maison Valmont wine cellar" />
+      <video autoplay muted loop playsinline>
+        <source src="@assets/hero/hero.mp4" type="video/mp4" />
+      </video>
     </div>
 
     <div class="hero-overlay" />
@@ -25,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import heroBg from '@assets/hero/hero.png'
+// import heroBg from '@assets/hero/hero.png'
 </script>
 
 <style lang="scss" scoped>
@@ -46,7 +48,7 @@ import heroBg from '@assets/hero/hero.png'
   inset: 0;
   z-index: 0;
 
-  img {
+  video {
     width: 100%;
     height: 100%;
     object-fit: cover;
