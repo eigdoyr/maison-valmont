@@ -83,3 +83,43 @@ export function useSlideIn(
     ScrollTrigger.getAll().forEach((t) => t.kill())
   })
 }
+
+export function useHeroReveal(selectors: {
+  top: string
+  bottom: string
+  center: string
+  cta: string
+}) {
+  onMounted(() => {
+    gsap.set(
+      [selectors.top, selectors.bottom, selectors.center, selectors.cta],
+      { willChange: 'transform, opacity' }
+    )
+
+    const tl = gsap.timeline({ delay: 0.3 })
+
+    tl.fromTo(
+      selectors.top,
+      { opacity: 0, y: -40 },
+      { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out' }
+    )
+      .fromTo(
+        selectors.bottom,
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out' },
+        '-=1'
+      )
+      .fromTo(
+        selectors.center,
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
+        '-=0.8'
+      )
+      .fromTo(
+        selectors.cta,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' },
+        '-=0.4'
+      )
+  })
+}
