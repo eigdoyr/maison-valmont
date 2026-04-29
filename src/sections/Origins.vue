@@ -28,6 +28,12 @@
 
 <script setup lang="ts">
 import portrait from '@assets/origins/portrait.png'
+import { useFadeUp, useSlideIn } from '@utils/useAnimations'
+
+useFadeUp('.origins-label')
+useFadeUp('.origins-heading', 0.2)
+useFadeUp('.origins-text', 0.4)
+useSlideIn('.origins-image', 'right', 0.3)
 </script>
 
 <style lang="scss" scoped>
