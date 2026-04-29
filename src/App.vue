@@ -4,6 +4,7 @@
     <Hero />
     <Origins />
     <Philosophy />
+    <Collection />
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import Navbar from '@components/Navbar.vue'
 import Hero from '@sections/Hero.vue'
 import Origins from '@sections/Origins.vue'
 import Philosophy from '@sections/Philosophy.vue'
+import Collection from '@sections/Collection.vue'
 </script>
 
 <style lang="scss">
