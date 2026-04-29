@@ -60,7 +60,7 @@ useSlideIn('.origins-image', 'right', 0.3)
 }
 
 .origins-heading {
-  font-family: $font-body;
+  font-family: $font-serif;
   font-style: italic;
   font-size: clamp(2rem, 4vw, 3.5rem);
   color: $black;
@@ -80,7 +80,7 @@ useSlideIn('.origins-image', 'right', 0.3)
 }
 
 .origins-intro {
-  font-family: $font-body;
+  font-family: $font-serif;
   font-size: $text-body;
   line-height: 1.6;
   color: $black;

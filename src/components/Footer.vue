@@ -48,7 +48,7 @@
 }
 
 .footer-address {
-  font-family: $font-body;
+  font-family: $font-serif;
   font-size: 0.75rem;
   color: $gray;
 }
@@ -60,7 +60,7 @@
   gap: 0.75rem;
 
   a {
-    font-family: $font-body;
+    font-family: $font-serif;
     font-size: 0.75rem;
     color: $white;
     transition: color 0.3s ease;
@@ -77,7 +77,7 @@
 }
 
 .footer-right {
-  font-family: $font-body;
+  font-family: $font-serif;
   font-size: 0.75rem;
   color: $gray;
   text-align: right;
@@ -88,7 +88,7 @@
   text-align: center;
 
   p {
-    font-family: $font-body;
+    font-family: $font-serif;
     font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.3);
   }
