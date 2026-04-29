@@ -34,6 +34,13 @@
 
 <script setup lang="ts">
 import bottle from '@assets/collection/bottle.png'
+import { useFadeUp, useSlideIn } from '@utils/useAnimations'
+
+useFadeUp('.collection-label')
+useFadeUp('.collection-year-wrap', 0.2)
+useFadeUp('.collection-notes', 0.4)
+useFadeUp('.collection-cta', 0.6)
+useSlideIn('.collection-right', 'right', 0.2)
 </script>
 
 <style lang="scss" scoped>
