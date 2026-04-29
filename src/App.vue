@@ -1,7 +1,13 @@
 <template>
   <main>
-    <h1>Maison Valmont</h1>
+    <Navbar />
   </main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Navbar from '@components/Navbar.vue'
+</script>
+
+<style lang="scss">
+@use '@styles/main.scss';
+</style>
