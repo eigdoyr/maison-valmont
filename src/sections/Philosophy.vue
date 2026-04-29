@@ -20,6 +20,11 @@
 
 <script setup lang="ts">
 import vineyard from '@assets/philosophy/vineyard.png'
+import { useFadeUp, useFadeIn } from '@utils/useAnimations'
+
+useFadeIn('.philosophy-bg', 0)
+useFadeUp('.philosophy-heading', 0.3)
+useFadeUp('.philosophy-body', 0.5)
 </script>
 
 <style lang="scss" scoped>
