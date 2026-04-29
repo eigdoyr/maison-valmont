@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+.section-padding {
+  padding: $spacing-xl $spacing-md;
+
+  @media (max-width: $tablet) {
+    padding: $spacing-lg $spacing-md;
+  }
+
+  @media (max-width: $mobile) {
+    padding: $spacing-lg $spacing-sm;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
