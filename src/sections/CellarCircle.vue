@@ -44,13 +44,31 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import gsap from 'gsap'
+import { useFadeUp, useFadeIn } from '@utils/useAnimations'
 
 const email = ref('')
 
 const handleSubmit = () => {
   console.log('Email submitted:', email.value)
 }
+
+onMounted(() => {
+  gsap.to('.cellar-ring', {
+    rotation: 360,
+    duration: 50,
+    ease: 'none',
+    repeat: -1,
+    transformOrigin: '50% 50%',
+  })
+})
+
+useFadeIn('.cellar-emblem')
+useFadeUp('.cellar-heading', 0.2)
+useFadeUp('.cellar-body', 0.4)
+useFadeUp('.cellar-form', 0.6)
+useFadeUp('.cellar-cta', 0.8)
 </script>
 
 <style lang="scss" scoped>
