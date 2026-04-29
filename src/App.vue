@@ -2,12 +2,14 @@
   <main>
     <Navbar />
     <Hero />
+    <Origins />
   </main>
 </template>
 
 <script setup lang="ts">
 import Navbar from '@components/Navbar.vue'
 import Hero from '@sections/Hero.vue'
+import Origins from '@sections/Origins.vue'
 </script>
 
 <style lang="scss">
