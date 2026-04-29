@@ -83,7 +83,7 @@ useSlideIn('.collection-right', 'right', 0.2)
 
 .collection-year {
   font-family: $font-display;
-  font-size: clamp(300px, 18vw, 280px);
+  font-size: clamp(13rem, 18vw, 18.5rem);
   color: rgba(140, 0, 8, 0.06);
   line-height: 1;
   position: absolute;
@@ -98,7 +98,7 @@ useSlideIn('.collection-right', 'right', 0.2)
 .collection-heading {
   font-family: $font-serif;
   font-style: italic;
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(3rem, 4vw, 5rem);
   color: $gray;
   line-height: 0.83;
   letter-spacing: -0.01em;
@@ -169,10 +169,6 @@ useSlideIn('.collection-right', 'right', 0.2)
   .collection-right {
     min-height: 60vw;
   }
-
-  .collection-year {
-    font-size: clamp(100px, 20vw, 200px);
-  }
 }
 
 /* Mobile */
@@ -188,10 +184,6 @@ useSlideIn('.collection-right', 'right', 0.2)
 
   .collection-right {
     min-height: 80vw;
-  }
-
-  .collection-year {
-    font-size: clamp(200px, 25vw, 160px);
   }
 }
 </style>
