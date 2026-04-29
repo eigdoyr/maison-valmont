@@ -1,16 +1,8 @@
 @use 'variables' as *;
 
-.text-display {
-  font-family: $font-display;
-  font-weight: 400;
-  line-height: 0.9;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
 .text-heading {
   font-family: $font-serif;
-  font-size: $text-section-heading;
+  font-size: 2rem;
   font-style: italic;
   line-height: 1.2;
 }
