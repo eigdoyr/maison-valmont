@@ -1,0 +1,169 @@
+<template>
+  <section class="cellar section-padding" id="cellar">
+    <div class="cellar-content">
+      <div class="cellar-emblem">
+        <svg viewBox="0 0 200 200" class="cellar-ring">
+          <defs>
+            <path
+              id="circle-path"
+              d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"
+            />
+          </defs>
+          <text class="cellar-ring-text">
+            <textPath href="#circle-path" startOffset="0%">
+              THE CELLAR CIRCLE · MAISON VALMONT ·
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <h2 class="cellar-heading text-heading">The Cellar Circle</h2>
+
+      <p class="cellar-body">
+        Access to Maison Valmont is limited. Members of The Cellar Circle
+        receive priority allocation of new vintages, invitations to private
+        harvest dinners, and access to our library of back-vintages.
+      </p>
+
+      <div class="cellar-form">
+        <span class="cellar-bracket">[</span>
+        <input
+          v-model="email"
+          type="email"
+          placeholder="Enter your email address"
+          class="cellar-input"
+        />
+        <span class="cellar-bracket">]</span>
+      </div>
+
+      <button class="cellar-cta" @click="handleSubmit">
+        Request Invitation
+      </button>
+    </div>
+  </section>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const email = ref('')
+
+const handleSubmit = () => {
+  console.log('Email submitted:', email.value)
+}
+</script>
+
+<style lang="scss" scoped>
+@use '@styles/variables' as *;
+
+.cellar {
+  background-color: $black;
+  color: $white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cellar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 560px;
+  gap: 1.5rem;
+}
+
+.cellar-emblem {
+  width: 160px;
+  height: 160px;
+}
+
+.cellar-ring {
+  width: 100%;
+  height: 100%;
+}
+
+.cellar-ring-text {
+  font-family: $font-body;
+  font-size: 18px;
+  fill: $gold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.cellar-heading {
+  font-family: $font-body;
+  font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: $white;
+}
+
+.cellar-body {
+  font-family: $font-body;
+  font-size: $text-body;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  max-width: 400px;
+}
+
+.cellar-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.cellar-bracket {
+  font-family: $font-body;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.cellar-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: $white;
+  font-family: $font-body;
+  font-size: $text-body;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  width: 280px;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    border-color: $gold;
+  }
+}
+
+.cellar-cta {
+  background: none;
+  border: none;
+  font-family: $font-body;
+  font-size: 0.875rem;
+  color: $white;
+  border-bottom: 1px solid $white;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+
+  &:hover {
+    color: $gold;
+    border-color: $gold;
+  }
+}
+
+@media (max-width: $mobile) {
+  .cellar-input {
+    width: 200px;
+  }
+}
+</style>

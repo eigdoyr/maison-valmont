@@ -5,6 +5,7 @@
     <Origins />
     <Philosophy />
     <Collection />
+    <CellarCircle />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import Hero from '@sections/Hero.vue'
 import Origins from '@sections/Origins.vue'
 import Philosophy from '@sections/Philosophy.vue'
 import Collection from '@sections/Collection.vue'
+import CellarCircle from '@sections/CellarCircle.vue'
 </script>
 
 <style lang="scss">
