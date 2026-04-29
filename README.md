@@ -1,5 +1,56 @@
-# Vue 3 + TypeScript + Vite
+# Maison Valmont 🍷
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A luxury Napa Valley winery single-page website built with Vue 3, TypeScript, and Vite.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Preview
+
+![Maison Valmont Preview](/public/preview.png)
+
+## Live Demo
+
+[le-maison-valmont.netlify.app](https://le-maison-valmont.netlify.app)
+
+## Built With
+
+- Vue 3 + Composition API
+- TypeScript
+- Vite
+- GSAP
+- SCSS
+
+## Features
+
+- Full bleed hero with looping video background
+- GSAP cinematic scroll animations
+- Rotating SVG emblem
+- Email validation with keyboard support
+- Fully responsive — desktop, tablet, mobile
+- SEO meta tags
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```text
+src/
+├── assets/          # Images and video
+├── components/      # Navbar, Footer
+├── sections/        # Hero, Origins, Philosophy, Collection, CellarCircle
+├── styles/          # SCSS design tokens and utilities
+└── utils/           # GSAP animation composables
+```
+
+## Design
+
+Designed & Built by [Ryodgie Barnatia](https://www.ryodgie.com)
